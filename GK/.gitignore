@@ -1,0 +1,126 @@
+# ============================
+# 🔹 PYTHON & ENVIRONMENT
+# ============================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.so
+*.dll
+*.exe
+*.log
+
+# Virtual environments
+env/
+venv/
+myenv/
+.venv/
+ENV/
+env.bak/
+
+# Jupyter notebook cache
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+
+# ============================
+# 🔹 BUILD / DIST / INSTALLER
+# ============================
+build/
+dist/
+*.egg-info/
+.eggs/
+*.manifest
+*.spec
+
+# ============================
+# 🔹 MODEL & DATA FILES (LỚN)
+# ============================
+*.h5
+*.hdf5
+*.keras
+*.npz
+*.npy
+*.pkl
+*.csv
+*.xlsx
+*.xls
+*.json
+*.sav
+*.dat
+*.ckpt
+*.pt
+*.pth
+*.tflite
+
+# Dữ liệu training / working
+working/
+dataset/
+data/
+outputs/
+results/
+checkpoints/
+runs/
+logs/
+
+# ============================
+# 🔹 ARCHIVES / TEMP / LOG
+# ============================
+*.zip
+*.rar
+*.tar
+*.gz
+*.7z
+*.bak
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+*.old
+*.out
+
+# ============================
+# 🔹 IDE / EDITOR CONFIG
+# ============================
+.vscode/
+.idea/
+*.iml
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.user
+
+# ============================
+# 🔹 FRONTEND (NẾU CÓ)
+# ============================
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/.next/
+frontend/.cache/
+frontend/.env
+frontend/.env.local
+
+# ============================
+# 🔹 BACKEND & FLASK
+# ============================
+*.db
+instance/
+migrations/
+__pycache__/
+.env
+.env.local
+*.sqlite3
+
+# ============================
+# 🔹 SYSTEM / OS FILES
+# ============================
+.DS_Store
+ehthumbs.db
+Icon?
+Thumbs.db
+desktop.ini

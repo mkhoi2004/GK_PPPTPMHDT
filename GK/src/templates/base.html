@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>{% block title %}Drowsiness Detection{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <h1 class="hero-title">Drowsiness Detection</h1>
+      <p class="hero-subtitle">Ứng dụng phát hiện ngủ gật khi lái xe</p>
+    </div>
+  </header>
+
+  <main class="page">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="footer">
+    <p>@ 2025 Nhóm 11 Phương pháp phát triển phần mềm hướng đối tượng</p>
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

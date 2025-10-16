@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %}Phát hiện ngủ gật{% endblock %}
+{% block content %}
+
+<section class="card">
+  <h2 class="card-title">Vui lòng <strong>chọn ảnh</strong> ở đây</h2>
+
+  <form id="upload-form" enctype="multipart/form-data" class="form">
+<label for="image" class="file-label">
+  <input id="image" type="file" name="image" accept="image/*" required class="file-input">
+</label>
+    <button type="submit" class="btn-primary">Dự đoán</button>
+  </form>
+</section>
+
+<section class="card">
+  <h2 class="card-title">Phần kết quả sẽ hiển thị tại đây:</h2>
+
+  <div class="preview-wrap">
+    <img id="preview" alt="Ảnh xem trước" class="preview" />
+  </div>
+
+  <div id="result" class="result" style="display:none;"></div>
+</section>
+
+<script>
+  // Giữ nguyên preview
+  const input = document.getElementById('image');
+  const preview = document.getElementById('preview');
+  input.addEventListener('change', () => {
+    if (input.files && input.files[0]) {
+      const reader = new FileReader();
+      reader.onload = e => { preview.src = e.target.result; };
+      reader.readAsDataURL(input.files[0]);
+    } else {
+      preview.removeAttribute('src');
+    }
+  });
+</script>
+
+{% endblock %}
